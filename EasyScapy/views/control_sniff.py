@@ -57,6 +57,11 @@ def controls(request):
             params += fs
             json[tmp] = SCAPY_CORRECT
 
+        elif 'testcode' is tmp:
+
+            if params_dict[tmp]:
+                params += ' test'
+
         else:
 
             json[tmp] = SCAPY_NOPARAMS

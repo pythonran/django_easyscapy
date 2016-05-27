@@ -7,10 +7,10 @@ def http_post():
 
     url = 'http://127.0.0.1:8000/EasyScapy/sniffer/'
 
-    values = {'status':'stop'}
+    values = {'status':'stop',"testcode":'test'}
 
     jdata = json.dumps(values)
-    #jdata = urllib.urlencode(values)
+
     req = urllib2.Request(url, jdata)
     response = urllib2.urlopen(req)
     return response.read()
