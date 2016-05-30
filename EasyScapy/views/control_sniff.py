@@ -1,4 +1,3 @@
-from scapy.all import *
 import os
 from rest_framework.decorators import api_view
 from django.http import HttpResponse,HttpRequest

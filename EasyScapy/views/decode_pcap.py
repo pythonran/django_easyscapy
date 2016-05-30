@@ -3,7 +3,6 @@ from pyshark import *
 from rest_framework.decorators import api_view
 from django.http import HttpResponse
 from EasyScapy import models
-#from threading import Thread
 import sys
 # Create your views here.
 
